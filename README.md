@@ -1,2 +1,2 @@
 # zsh-env
-plugin like ohmyzsh/plugins/pyenv for nodenv &amp; gone
+plugin for nodenv &amp; goenv like [ohmyzsh/plugins/pyenv](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pyenv)
