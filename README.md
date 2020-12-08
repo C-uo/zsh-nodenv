@@ -1,20 +1,16 @@
 # zsh-env
-plugin for nodenv &amp; goenv like [ohmyzsh/plugins/pyenv](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pyenv)
+plugin for nodenv & ~~goenv~~ like [ohmyzsh/plugins/pyenv](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/pyenv)
 
 
-# pyenv 
+This plugin looks for [nodenv](https://github.com/nodenv/nodenv), and loads it if it's found.
 
-This plugin looks for [pyenv](https://github.com/pyenv/pyenv), a Simple Python version
-management system, and loads it if it's found. It also loads pyenv-virtualenv, a pyenv
-plugin to manage virtualenv, if it's found.
-
-To use it, add `pyenv` to the plugins array in your zshrc file:
+## Installtion
+### Using [Zinit](https://github.com/zdharma/zinit)
+Load `zsh-env` as a plugin in your `.zshrc`
 
 ```zsh
-plugins=(... pyenv)
+# Plugin zsh-env loaded with investigating.
+zinit load C-uo/zsh-env
+# Plugin zsh-env loaded without investigating.
+zinit light C-uo/zsh-env
 ```
-
-## Functions
-
-- `pyenv_prompt_info`: displays the Python version in use by pyenv; or the global Python
-  version, if pyenv wasn't found.
